@@ -1,12 +1,4 @@
 .menu {
-  padding: 3rem 0;
-  margin: 0 auto 6rem;
-
-  &__wrap {
-    width: $sp-basic-width;
-    margin: 0 auto;
-  }
-
   &__heading {
     text-align: center;
     font-family: $font-deco-1;
@@ -21,6 +13,8 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    max-width: $pc-max-width;
+    margin: 0 auto;
   }
 
   &__tab {
@@ -45,8 +39,8 @@
   }
 
   &__content {
-    border: 1px solid $color-primary;
-    border-top: none;
+    width: $sp-basic-width;
+    margin: 0 auto;
   }
 
   &__item {
@@ -69,16 +63,23 @@
     }
 
     &__content {
+      width: $sp-basic-width;
       text-align: center;
 
       p {
         font-size: 1.8rem;
+        margin-bottom: 1rem;
       }
 
       .tel {
         font-size: 5rem;
         font-family: $font-deco-1;
         font-weight: bold;
+      }
+
+      @include mq(laptap) {
+        max-width: 80rem;
+        margin: 0 auto;
       }
     }
   }

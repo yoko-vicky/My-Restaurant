@@ -2,8 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    index: './src/scripts/index.js',
-    sum: './src/scripts/sum.js',
+    index: './src/scripts/index.js'
   },
   output: {
     filename: '[name].bundle.js',

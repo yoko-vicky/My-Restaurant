@@ -1,6 +1,6 @@
 .main {
   &__visual {
-    height: 100vh;
+    height: 50vh;
     background: url(../images/sushi_11.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,18 +28,21 @@
     z-index: 5;
     color: $white;
     text-align: center;
+    padding-top: 6rem;
   }
 
   &__heading {
     font-family: $font-deco-2;
     font-size: 14rem;
     line-height: 1;
+    margin-bottom: 0;
   }
 
   &__sub-heading {
     font-family: $font-deco-1;
-    font-size: 2rem;
-    letter-spacing: 3px;
+    font-size: 1.9rem;
+    letter-spacing: 3.5px;
     text-transform: uppercase;
+    margin-top: -1rem;
   }
 }
