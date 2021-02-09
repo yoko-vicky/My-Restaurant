@@ -1,0 +1,8 @@
+$primary-color: skyblue;
+
+body {
+  display: grid;
+  transition: all 0.5s;
+  user-select: none;
+  background: url(../images/snoopy.jpg) no-repeat;
+}
