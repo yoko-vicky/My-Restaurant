@@ -1,6 +1,4 @@
 .main {
-  border: 1px solid;
-
   &__visual {
     height: 100vh;
     background: url(../images/sushi_11.jpg) no-repeat;
@@ -34,7 +32,7 @@
 
   &__heading {
     font-family: $font-deco-2;
-    font-size: 12rem;
+    font-size: 14rem;
     line-height: 1;
   }
 

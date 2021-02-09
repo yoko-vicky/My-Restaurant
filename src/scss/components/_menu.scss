@@ -1,0 +1,95 @@
+.menu {
+  padding: 3rem 0;
+  margin: 0 auto 6rem;
+
+  &__wrap {
+    width: $sp-basic-width;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    text-align: center;
+    font-family: $font-deco-1;
+    text-transform: uppercase;
+    margin: 0 auto 3rem;
+    font-size: 3.2rem;
+  }
+
+  &__tabs {
+    background: $light-grey-2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__tab {
+    padding: 2rem;
+    flex: 1;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      border-left: none;
+    }
+
+    &.active {
+      background: $color-primary;
+      color: $white;
+    }
+  }
+
+  &__content {
+    border: 1px solid $color-primary;
+    border-top: none;
+  }
+
+  &__item {
+    display: none;
+    padding: 1rem;
+
+    &.active {
+      display: block;
+    }
+
+    &__heading {
+      font-family: $font-deco-2;
+      font-size: 4rem;
+      text-align: center;
+      margin: 0 auto 2rem;
+
+      @include mq(laptap) {
+        font-size: 6rem;
+      }
+    }
+
+    &__content {
+      text-align: center;
+
+      p {
+        font-size: 1.8rem;
+      }
+
+      .tel {
+        font-size: 5rem;
+        font-family: $font-deco-1;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__list {
+    &__item {
+      font-size: 1.8rem;
+      font-family: $font-deco-1;
+      text-transform: uppercase;
+      margin: 0 auto 1rem;
+      font-weight: bold;
+    }
+  }
+}

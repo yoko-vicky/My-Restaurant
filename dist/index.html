@@ -3,41 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Restaurant</title>
+  <title>Sushi Restaurant</title>
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
   <div id="content">
 
     <header class="header">
-      <div class="header__group">
-        <div class="header__group__inner">
-          <div class="header__logo">My Restaurant</div>
-          <div class="hamburger"><span></span><span></span><span></span></div>
+      <div class="header__wrap">
+        <div class="header__group">
+          <div class="header__group__inner">
+            <div class="header__logo">SushiTaro</div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+          </div>
         </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="/" class="header__link">Home</a></li>
+            <li class="header__item"><a href="#menu" class="header__link">Menu & Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item"><a href="/" class="header__link">Home</a></li>
-          <li class="header__item"><a href="#" class="header__link">Menu</a></li>
-          <li class="header__item"><a href="#" class="header__link">Reservation</a></li>
-          <li class="header__item"><a href="#" class="header__link">Access</a></li>
-          <li class="header__item"><a href="#" class="header__link">Contact</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main class="main">
 
       <div class="main__visual">
         <div class="main__text">
-          <h1 class="main__heading">Sushi lovers</h1>
+          <h1 class="main__heading">SushiTaro</h1>
           <p class="main__sub-heading">Making sushi since 1960</p>
         </div>
       </div>
 
+      <div class="menu" id="menu">
+        <div class="menu__wrap">
+          <h2 class="menu__heading">Menu & Contact</h2>
+          <div class="menu__tabs">
+            <div class="menu__tab" id="default-open" data-id="food">Food</div>
+            <div class="menu__tab" data-id="drink">Drink</div>
+            <div class="menu__tab" data-id="contact">Contact</div>
+          </div>
+          <div class="menu__content">
+            <div id="food" class="menu__item">
+              <h3 class="menu__item__heading">Food</h3>
+              <div class="menu__item__content">
+                  <ul class="menu__list">
+                    <li class="menu__list__item">Sushi Ume Set $30</li>
+                    <li class="menu__list__item">Sushi Take Set $50</li>
+                    <li class="menu__list__item">Sushi Matsu Set $70</li>
+                  </ul>
+              </div>
+            </div>
+            <div id="drink" class="menu__item">
+              <h3 class="menu__item__heading">Drink</h3>
+              <div class="menu__item__content">
+                  <ul class="menu__list">
+                    <li class="menu__list__item">Green Tea $6</li>
+                    <li class="menu__list__item">Matcha $8</li>
+                    <li class="menu__list__item">Shochu $10</li>
+                    <li class="menu__list__item">Nihonsyu $20</li>
+                  </ul>
+              </div>
+            </div>
+            <div id="contact" class="menu__item">
+              <h3 class="menu__item__heading">Contact</h3>
+              <div class="menu__item__content">
+                  <p>Feel free to contact us:</p>
+                  <p class="tel">000-111-0000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </main>
 
+    <footer class="footer">
+      &copy; 2021 Yoko Saka
+    </footer>
 
   </div>
   <script src="./index.bundle.js"></script>
