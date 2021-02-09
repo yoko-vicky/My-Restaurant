@@ -1,5 +1,5 @@
-const { merge } = require('webpack-merge');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { merge } = require('webpack-merge'); // eslint-disable-line import/no-extraneous-dependencies
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // eslint-disable-line import/no-extraneous-dependencies
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
