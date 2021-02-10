@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# My Restautrant
+# Sushi Taro
 ![Top Page Screenshot](./screenshot.png)
 
 

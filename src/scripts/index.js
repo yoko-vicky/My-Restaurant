@@ -1,10 +1,12 @@
 import '../scss/styles.scss';
-import tab from './modules/tab';
-// import navbar from './modules/navbar';
-// import tabbedContainer from './modules/tabbed-container';
-// import footer from './modules/footer';
+import header from './mymodules/header';
+import footer from './mymodules/footer';
+import main from './mymodules/main';
+import menu from './mymodules/menu';
+import addTabEvent from './mymodules/tab';
 
-// tab();
-// navbar();
-// tabbedContainer();
-// footer();
+header();
+main();
+menu();
+footer();
+addTabEvent();

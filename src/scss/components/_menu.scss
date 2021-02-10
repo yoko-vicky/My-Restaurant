@@ -1,4 +1,8 @@
 .menu {
+  @include mq(laptap) {
+    min-height: 44vh;
+  }
+
   &__heading {
     text-align: center;
     font-family: $font-deco-1;
@@ -105,8 +109,9 @@
         margin: 0 auto;
         width: 100%;
 
-        &.max-80 {
+        .max-80 {
           max-width: 80rem;
+          margin: 0 auto;
         }
       }
     }

@@ -13,9 +13,9 @@ module.exports = merge(common, {
         test: /\.(sa|sc|c)ss$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { sourceMap: true } }, // Translates CSS into CommonJS
-          { loader: 'postcss-loader', options: { sourceMap: true } }, // Translates CSS into CommonJS
-          { loader: 'sass-loader', options: { sourceMap: true } }, // Translates CSS into CommonJS
+          { loader: 'css-loader', options: { sourceMap: true } },
+          { loader: 'postcss-loader', options: { sourceMap: true } },
+          { loader: 'sass-loader', options: { sourceMap: true } },
         ],
       },
     ],
