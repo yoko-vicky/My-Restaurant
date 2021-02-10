@@ -80,3 +80,4 @@ This project is [MIT](./LICENSE) licensed.
 ## Acknowledgements
 * [Odin Project: Restaurant Page](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 * [Pexels](https://www.pexels.com/)
+* [iconify](https://iconify.design/icon-sets/)
