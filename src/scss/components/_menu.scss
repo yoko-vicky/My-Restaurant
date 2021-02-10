@@ -41,11 +41,19 @@
   &__content {
     width: $sp-basic-width;
     margin: 0 auto;
+
+    @include mq(laptap) {
+      max-width: $pc-max-width;
+    }
   }
 
   &__item {
     display: none;
     padding: 1rem;
+
+    @include mq(laptap) {
+      padding: 0;
+    }
 
     &.active {
       display: block;
@@ -63,7 +71,8 @@
     }
 
     &__content {
-      width: $sp-basic-width;
+      width: 96%;
+      margin: 0 auto;
       text-align: center;
 
       p {
@@ -72,25 +81,59 @@
       }
 
       .tel {
-        font-size: 5rem;
+        font-size: 4.8rem;
         font-family: $font-deco-1;
         font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .iconify {
+          margin-right: 1rem;
+          font-size: 3.4rem;
+          display: none;
+        }
+
+        @include mq(tab) {
+          .iconify {
+            display: inline;
+          }
+        }
       }
 
       @include mq(laptap) {
-        max-width: 80rem;
         margin: 0 auto;
+        width: 100%;
+
+        &.max-80 {
+          max-width: 80rem;
+        }
       }
+    }
+
+    &__image {
+      width: 100%;
+      margin: 0 auto 1rem;
     }
   }
 
   &__list {
+    @include mq(laptap) {
+      display: flex;
+    }
+
     &__item {
       font-size: 1.8rem;
       font-family: $font-deco-1;
       text-transform: uppercase;
-      margin: 0 auto 1rem;
       font-weight: bold;
+      margin: 0 auto 3rem;
+
+      @include mq(laptap) {
+        &:not(:last-child) {
+          margin: 0 3rem 0 0;
+        }
+      }
     }
   }
 }
