@@ -1,0 +1,28 @@
+.header {
+  background: $white;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+
+  &__wrap {
+    max-width: $sp-basic-width;
+    height: $sp-nav-height;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(laptap) {
+      width: $pc-basic-width;
+      max-width: $pc-content-width;
+      padding: 1rem 0;
+    }
+  }
+
+  &__logo {
+    font-family: $font-deco-1;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+}
