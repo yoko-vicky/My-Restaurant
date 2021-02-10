@@ -5,10 +5,9 @@
 
 ## About the Project
 
-This project is based on the Odin Project, [Restaurant Page](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
+This project is based on the Odin Project, [Restaurant Page](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page). I built a simple webpage for "Sushi Taro" which is a fictitious sushi restaurant. In this project, we are supposed to add Tab and most DOM elements with JavaScript. I separate JavaScript files using Modules, and import and export those files.
 
 A list of commonly used resources that I find helpful is listed in the acknowledgments.
-
 
 ## Table of Contents
 
@@ -30,7 +29,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 
 ## Live Demo
 
-[Live Demo Link](https://yocosaka.github.io)
+[Live Demo Link](https://sushitaro.netlify.app/)
 
 
 ## Getting Started
@@ -80,3 +79,4 @@ This project is [MIT](./LICENSE) licensed.
 
 ## Acknowledgements
 * [Odin Project: Restaurant Page](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
+* [Pexels](https://www.pexels.com/)

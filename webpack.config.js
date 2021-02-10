@@ -1,6 +1,10 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
+  devServer: {
+    contentBase: './dist',
+  },
   entry: {
     index: './src/scripts/index.js',
   },
@@ -25,6 +29,14 @@ module.exports = {
             presets: ['@babel/preset-env'],
           },
         },
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(?:ico|gif|png|jpg|svg|jpeg)$/i,
