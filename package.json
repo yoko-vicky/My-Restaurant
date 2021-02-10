@@ -1,17 +1,25 @@
 {
-  "name": "webpack-demo",
+  "name": "sushitaro",
   "version": "1.0.0",
-  "description": "",
+  "homepage": "https://github.com/yocosaka/My-Restaurant#readme",
+  "description": "This project is based on the Odin Project, Restaurant Page. I built a simple webpage for 'Sushi Taro' which is a fictitious sushi restaurant.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yocosaka/My-Restaurant.git"
+  },
+  "keywords": [],
+  "author": "Yoko Saka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yocosaka/My-Restaurant/issues"
+  },
   "scripts": {
     "stylelint": "stylelint '**/*.scss'",
     "eslint": "eslint .",
     "dev": "webpack serve --open",
     "build": "webpack"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
